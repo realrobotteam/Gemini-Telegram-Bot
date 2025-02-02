@@ -19,7 +19,7 @@ default_model_dict = gemini.default_model_dict
 
 async def start(message: Message, bot: TeleBot) -> None:
     try:
-        await bot.reply_to(message , escape("Welcome, you can ask me questions now. \nFor example: `Who is john lennon?`"), parse_mode="MarkdownV2")
+        await bot.reply_to(message , escape("ارتباط‌گر؛ هم‌صدایی و آشتی مردم‌داری و فناوری در عصر تازهٔ روابط عمومی"), parse_mode="MarkdownV2")
     except IndexError:
         await bot.reply_to(message, error_info)
 
