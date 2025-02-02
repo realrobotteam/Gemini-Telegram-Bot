@@ -27,7 +27,7 @@ async def gemini_handler(message: Message, bot: TeleBot) -> None:
     try:
         m = message.text.strip().split(maxsplit=1)[1].strip()
     except IndexError:
-        await bot.reply_to( message , escape("Please add what you want to say after /gemini. \nFor example: `/gemini Who is john lennon?`"), parse_mode="MarkdownV2")
+        await bot.reply_to( message , escape("ارتباط‌گر؛ هم‌صدایی و آشتی مردم‌داری و فناوری در عصر تازهٔ روابط عمومی"), parse_mode="MarkdownV2")
         return
     await gemini.gemini(bot,message,m,model_1)
 
@@ -35,7 +35,7 @@ async def gemini_pro_handler(message: Message, bot: TeleBot) -> None:
     try:
         m = message.text.strip().split(maxsplit=1)[1].strip()
     except IndexError:
-        await bot.reply_to( message , escape("Please add what you want to say after /gemini_pro. \nFor example: `/gemini_pro Who is john lennon?`"), parse_mode="MarkdownV2")
+        await bot.reply_to( message , escape("ارتباط‌گر؛ هم‌صدایی و آشتی مردم‌داری و فناوری در عصر تازهٔ روابط عمومی"), parse_mode="MarkdownV2")
         return
     await gemini.gemini(bot,message,m,model_2)
 
